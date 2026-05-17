@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.container {
+    background: white;
+    border-radius: 20px;
+    padding: 40px;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 30px;
+    color: #333;
+    font-size: 28px;
+}
+
+.button-group {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.card-button {
+    flex: 1;
+    padding: 15px;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    border-radius: 10px;
+    background: #667eea;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.card-button:hover {
+    background: #5568d3;
+    transform: translateY(-2px);
+}
+
+.card-button:active {
+    transform: translateY(0);
+}
+
+#qr-container {
+    margin-top: 20px;
+}
+
+#qrcode {
+    display: inline-block;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+}
+
+#qrcode img {
+    display: block;
+    margin: 0 auto;
+}
+
+#card-label {
+    margin-top: 15px;
+    color: #666;
+    font-size: 14px;
+}
+
+/* Mobile optimization */
+@media (max-width: 480px) {
+    .container {
+        padding: 30px 20px;
+    }
+    
+    h1 {
+        font-size: 24px;
+    }
+    
+    .card-button {
+        padding: 12px;
+        font-size: 14px;
+    }
+}
