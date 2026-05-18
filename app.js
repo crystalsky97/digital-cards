@@ -1,14 +1,14 @@
 // Your contact data
 const cards = {
     business: {
-        name: "Your Name",
+        name: "Georgiana (Jo) Hedesan",
         phone: "+1234567890",
         email: "georgiana.hedesan@history.ox.ac.uk",
         url: "https://linkedin.com/in/johedesan",
         label: "Business Card"
     },
     personal: {
-        name: "Your Name",
+        name: "Jo Hedesan",
         phone: "+447812345678",
         email: "johedesan@gmail.com",
         whatsapp: "+447812345678",  // WhatsApp uses phone number
