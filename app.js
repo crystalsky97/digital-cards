@@ -3,16 +3,19 @@ const cards = {
     business: {
         name: "Your Name",
         phone: "+1234567890",
-        email: "you@company.com",
-        url: "https://linkedin.com/in/yourprofile",
+        email: "georgiana.hedesan@history.ox.ac.uk",
+        url: "https://linkedin.com/in/johedesan",
         label: "Business Card"
     },
     personal: {
         name: "Your Name",
-        phone: "+1234567890",
-        email: "personal@email.com",
-        url: "https://wa.me/1234567890",
-        instagram: "yourhandle",
+        phone: "+447824458837",
+        email: "johedesan@gmail.com",
+        whatsapp: "+447812345678",  // WhatsApp uses phone number
+        facebook: "johedesan",     // Just the username
+        youtube: "@johedesan",     // Channel handle
+        website: "https://yoursite.com",
+        instagram: "johedesan",
         label: "Personal Card"
     }
 };
@@ -29,8 +32,18 @@ EMAIL:${cardData.email}`;
     if (cardData.url) {
         vcard += `\nURL:${cardData.url}`;
     }
-    if (cardData.instagram) {
-        vcard += `\nURL:https://instagram.com/${cardData.instagram}`;
+  
+    if (cardData.website) {
+        vcard += `\nURL:${cardData.website}`;
+    }
+    if (cardData.whatsapp) {
+        vcard += `\nURL:https://wa.me/${cardData.whatsapp.replace('+', '')}`;
+    }
+    if (cardData.facebook) {
+        vcard += `\nURL:https://facebook.com/${cardData.facebook}`;
+    }
+    if (cardData.youtube) {
+        vcard += `\nURL:https://youtube.com/${cardData.youtube}`;
     }
     
     vcard += '\nEND:VCARD';
