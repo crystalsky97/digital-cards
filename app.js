@@ -9,12 +9,12 @@ const cards = {
     },
     personal: {
         name: "Your Name",
-        phone: "+447824458837",
+        phone: "+447812345678",
         email: "johedesan@gmail.com",
         whatsapp: "+447812345678",  // WhatsApp uses phone number
         facebook: "johedesan",     // Just the username
         youtube: "@johedesan",     // Channel handle
-        website: "https://yoursite.com",
+        website: "https://johedesan.wordpress.com/",
         instagram: "johedesan",
         label: "Personal Card"
     }
