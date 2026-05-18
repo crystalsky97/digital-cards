@@ -2,7 +2,7 @@
 const cards = {
     business: {
         name: "Georgiana (Jo) Hedesan",
-        phone: "+1234567890",
+        phone: "+441234567890",
         email: "georgiana.hedesan@history.ox.ac.uk",
         url: "https://linkedin.com/in/johedesan",
         label: "Business Card"
